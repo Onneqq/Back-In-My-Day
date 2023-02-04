@@ -4,8 +4,10 @@ My final GA Project!
 
 ##  :pushpin: ABOUT
 
-We are working towards a Single Page Application that allows users to create their own characters. These characters can level up, adjust abilities, do what RPG games do. After some time bouncing ideas around and trying to be as realistic as possible - We have decided to water the general idea down.
-We are now aiming to make a game that is similar to idle clicker games. The theme is: *pixelated RPG*.
+Working towards creaiting a SPA/web game playable on desktops and mobile phones. 
+The aim of the game is to guess what year the photograph shown was taken beginning from 1900 to present 2023. 
+A score system will keep track based on how close the user was to the correct answer.
+Displaying the final score at the end - with the ability to share to friends.
 
  :sparkles: How to use our awesome project: :sparkles:
 1. Open browser
