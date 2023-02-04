@@ -11,10 +11,10 @@ Displaying the final score at the end - with the ability to share to friends.
 
  :sparkles: How to use our awesome project: :sparkles:
 1. Open browser
-2. Sign up
-3. Log in
-4. Create a character
-5. PLAY!
+2. Click Play
+3. Guess using the year ruler/submit
+4. Play through 5 images.
+5. Play again or share!
 (No link available at this point in time)
 
 ## :rocket: Cool tech
