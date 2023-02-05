@@ -1,8 +1,14 @@
-import React from 'react'
-// import { useState } from "react";
+import React, { useState } from 'react'
+import Game from './Game'
 // import './components/CSS/Main.scss'
 
 const Main = () => {
+  const [hasGameStarted, setHasGameStarted] = useState(false)
+
+  const startGame = () => {
+    setHasGameStarted(!hasGameStarted)
+  }
+
   return (
     <div className="main">
         <h1>B.I.M.D</h1>
@@ -16,7 +22,7 @@ const Main = () => {
           <li>You will receive a score based on how close your guess was</li>
         </ul>
 
-        <button onClick>PLAY!</button>
+        {hasGameStarted ? <Game /> : <button onClick={startGame}>PLAY!</button>}
     </div>
   )
 }
