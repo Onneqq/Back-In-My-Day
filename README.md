@@ -11,7 +11,7 @@ The aim of the game is to guess what year the photograph shown was taken beginni
 A score system will keep track based on how close the user was to the correct answer.
 Displaying the final score at the end - with the ability to share to friends.
 
- :sparkles: How to use our awesome project: :sparkles:
+ :sparkles: How to play project: :sparkles:
 1. Open browser
 2. Click Play
 3. Guess using the year ruler/submit
@@ -38,8 +38,6 @@ We used the following tech'n'tools:
 ![Planning Wireframe](https://i.imgur.com/qPPXIKw.jpg)
 
 
-
-WHo our users are, what do they want and why:
 
 
 ## :cry: Challenges faced :trollface:
