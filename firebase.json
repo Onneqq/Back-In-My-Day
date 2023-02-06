@@ -18,8 +18,7 @@
     }
   ],
   "hosting": {
-    "public": "dist/back-in-my-day",
-    "site": "back-in-my-day-e9752",
+    "public": "public",
      "ignore": [
       "firebase.json",
       "**/.*",
