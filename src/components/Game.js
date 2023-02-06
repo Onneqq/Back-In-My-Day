@@ -1,15 +1,29 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
+
+import React, { useEffect, useState } from 'react'
+import GamePhoto from './GamePhoto'
+import GameControls from './GameControls'
+import imageArr from '../newimageData2'
+import './CSS/Game.scss'
+
+const randImages = []
+
+while (randImages.length < 5) {
+  console.log(Math.floor(Math.random() * imageArr.length + 1))
+  randImages.push(imageArr[Math.floor(Math.random() * imageArr.length + 1)])
+}
 
 function Game () {
-//   const [gameState, setgameState] = useState(0)
+  const [gameState, setGameState] = useState({
+    turn: 1,
+    images: randImages,
+    currentScore: 0
+  })
 
   return (
         <div className="game">
-            <div className="game-image">
-                <h2 className="image-title"></h2>
-                <img src="#"></img>
-            </div>
-            <div className="ruler"></div>
+            <GamePhoto image={randImages[gameState.turn]} />
+            <GameControls setGameState={setGameState} />
         </div>
   )
 }

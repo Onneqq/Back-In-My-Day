@@ -1,8 +1,14 @@
-const fs = require('fs')
+// import fs from 'fs'
 
-const imageData = fs.readFileSync('./imageData.txt', { encoding: 'utf8' })
+// const imageData = () => {
+//   const imageData = fs.readFileSync('./imageData.txt', { encoding: 'utf8' })
 
-const nestedImageArr = imageData.split('\n')
+//   const nestedImageArr = imageData.split('\n')
 
-// const strTest = nestedImageArr[0].split(', ')
-console.log(nestedImageArr)
+//   const finalArr = nestedImageArr.map((element) => {
+//     return element.split(', ')
+//   })
+//   return finalArr
+// }
+
+// export default imageData
