@@ -20,7 +20,8 @@ function Game () {
     images: randImages,
     currentScore: 0,
     totalScore: 0,
-    turnResults: false
+    turnResults: false,
+    endGame: false
   })
 
   return (
