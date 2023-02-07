@@ -17,13 +17,17 @@ function Game () {
   const [gameState, setGameState] = useState({
     turn: 1,
     images: randImages,
-    currentScore: 0
+    currentScore: 0,
+    totalScore: 0
   })
 
   return (
         <div className="game">
-            <GamePhoto image={randImages[gameState.turn]} />
-            <GameControls setGameState={setGameState} />
+            <GamePhoto image={randImages[gameState.turn - 1]} />
+            <GameControls
+            gameState={gameState}
+            setGameState={setGameState}
+            />
         </div>
   )
 }
