@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { Slider } from '@mui/material'
 import './CSS/GameControls.scss'
 
-function GameControls ({ gameState, setGameState }) {
+function GameControlsPlaying ({ gameState, setGameState }) {
   const [value, setValue] = useState(1900)
   // console.log(gameState.turn)
   // console.log(value)
@@ -16,15 +16,19 @@ function GameControls ({ gameState, setGameState }) {
     if (score < 0) {
       score = 0
     }
-    setGameState({ ...gameState, currentScore: score, totalScore: gameState.totalScore + score })
+    setGameState({ ...gameState, currentScore: score, totalScore: gameState.totalScore + score, turnResults: true })
+  }
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue)
   }
 
   return (
     <>
     <Slider
   aria-label="Small steps"
-  defaultValue={0.00000005}
-  getAriaValueText={setValue}
+  defaultValue={1962}
+  onChange={handleChange}
   step={1}
   marks
   min={1900}
@@ -39,4 +43,4 @@ function GameControls ({ gameState, setGameState }) {
   )
 }
 
-export default GameControls
+export default GameControlsPlaying
