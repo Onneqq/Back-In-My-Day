@@ -2,7 +2,7 @@ import React from 'react'
 
 function GameControlsResults ({ gameState, setGameState }) {
   const handleChange = () => {
-    setGameState({ ...gameState, turnResults: false, turn: gameState.turn + 1 })
+    gameState.turn === 5 ? setGameState({ ...gameState, endGame: true }) : setGameState({ ...gameState, turnResults: false, turn: gameState.turn + 1 })
   }
 
   return (

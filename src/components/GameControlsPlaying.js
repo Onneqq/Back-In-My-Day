@@ -16,7 +16,7 @@ function GameControlsPlaying ({ gameState, setGameState }) {
     if (score < 0) {
       score = 0
     }
-    setGameState({ ...gameState, currentScore: score, totalScore: gameState.totalScore + score, turnResults: true })
+    setGameState({ ...gameState, previousScores: [...gameState.previousScores, score], currentScore: score, totalScore: gameState.totalScore + score, turnResults: true })
   }
 
   const handleChange = (event, newValue) => {

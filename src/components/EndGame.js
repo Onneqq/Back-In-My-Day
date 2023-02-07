@@ -1,0 +1,18 @@
+import React from 'react'
+
+function EndGame ({ gameState, setGameState }) {
+  return (
+        <div className='end-game'>
+            <h1>Final Score: {gameState.totalScore}</h1>
+            <p>Image 1: {gameState.previousScores[0]}</p>
+            <p>Image 2: {gameState.previousScores[1]}</p>
+            <p>Image 3: {gameState.previousScores[2]}</p>
+            <p>Image 4: {gameState.previousScores[3]}</p>
+            <p>Image 5: {gameState.previousScores[4]}</p>
+            <button onClick=''>Start Again!</button>
+        </div>
+
+  )
+}
+
+export default EndGame
