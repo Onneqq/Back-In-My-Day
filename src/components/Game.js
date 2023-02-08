@@ -37,7 +37,7 @@ function Game () {
             )
           : (
             <>
-                <GamePhoto image={randImages[gameState.turn - 1]} />
+                <GamePhoto image={gameState.images[gameState.turn - 1]} />
                 {gameState.turnResults
                   ? (
                     <GameControlsResults gameState={gameState} setGameState={setGameState} />

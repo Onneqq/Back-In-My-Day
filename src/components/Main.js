@@ -27,7 +27,7 @@ const Main = () => {
             <li>Guess WHEN you think the photograph was taken</li>
             <li>You will receive a score based on how close your guess was</li>
           </ul>
-          <button onClick={startGame}>PLAY!</button>
+          <button className='button-80' role="button" onClick={startGame}>PLAY!</button>
         </>
           )}
     </div>

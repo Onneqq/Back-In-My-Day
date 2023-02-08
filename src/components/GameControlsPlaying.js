@@ -6,10 +6,6 @@ import './CSS/GameControls.scss'
 
 function GameControlsPlaying ({ gameState, setGameState }) {
   const [value, setValue] = useState(1900)
-  // console.log(gameState.turn)
-  // console.log(value)
-  // console.log(userScores)
-  // console.log(gameState.images[gameState.turn - 1][2])
 
   const handleSubmit = () => {
     let score = (50 - Math.abs((gameState.images[gameState.turn - 1][2] - value))) * 50
@@ -25,21 +21,22 @@ function GameControlsPlaying ({ gameState, setGameState }) {
 
   return (
     <>
-    <Slider
-  aria-label="Small steps"
-  defaultValue={1962}
-  onChange={handleChange}
-  step={1}
-  marks
-  min={1900}
-  max={2023}
-  valueLabelDisplay="auto"
-  sx={{
-    height: 20
-  }}
-/>
-<button onClick={handleSubmit}>Submit</button>
-</>
+        <Slider
+          aria-label="Small steps"
+          defaultValue={1962}
+          onChange={handleChange}
+          step={1}
+          marks
+          min={1900}
+          max={2023}
+          valueLabelDisplay="auto"
+          sx={{
+            height: 20
+          }}
+        />
+      <h3>Year Selected: {value}</h3>
+      <button className="button-80" onClick={handleSubmit}>Submit</button>
+    </>
   )
 }
 
