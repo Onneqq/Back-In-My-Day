@@ -9,16 +9,19 @@ import imageArr from '../newimageData2'
 import './CSS/Game.scss'
 import GameControlsResults from './GameControlsResults'
 
-const randImages = []
-
-while (randImages.length < 5) {
-  randImages.push(imageArr[Math.floor(Math.random() * imageArr.length + 1)])
+let randImages = []
+function newRandImages () {
+  randImages = []
+  while (randImages.length < 5) {
+    randImages.push(imageArr[Math.floor(Math.random() * imageArr.length + 1)])
+  }
+  return randImages
 }
 
 function Game () {
   const [gameState, setGameState] = useState({
     turn: 1,
-    images: randImages,
+    images: newRandImages(),
     currentScore: 0,
     totalScore: 0,
     previousScores: [],
@@ -30,7 +33,7 @@ function Game () {
     <div className="game">
         {gameState.endGame
           ? (
-            <EndGame gameState={gameState} setGameState={setGameState} />
+            <EndGame gameState={gameState} setGameState={setGameState} newRandImages={newRandImages} />
             )
           : (
             <>
@@ -50,25 +53,3 @@ function Game () {
 }
 
 export default Game
-
-// return (
-//   <div className="game">
-//       <GamePhoto image={randImages[gameState.turn - 1]} />
-//       {gameState.turnResults
-//         ? <GameControlsResults
-//       gameState={gameState}
-//       setGameState={setGameState}
-//       />
-//         : <GameControlsPlaying
-//       gameState={gameState}
-//       setGameState={setGameState}
-//       />
-//     }
-
-//       <GameScore
-//       gameState={gameState}
-//       setGameState={setGameState}
-//       />
-
-//   </div>
-// )

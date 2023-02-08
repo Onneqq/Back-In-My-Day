@@ -1,6 +1,18 @@
 import React from 'react'
 
-function EndGame ({ gameState, setGameState }) {
+function EndGame ({ gameState, setGameState, newRandImages }) {
+  const handleStartAgain = () => {
+    setGameState({
+      turn: 1,
+      images: newRandImages(),
+      currentScore: 0,
+      totalScore: 0,
+      previousScores: [],
+      turnResults: false,
+      endGame: false
+    })
+  }
+
   return (
         <div className='end-game'>
             <h1>Final Score: {gameState.totalScore}</h1>
@@ -9,7 +21,7 @@ function EndGame ({ gameState, setGameState }) {
             <p>Image 3: {gameState.previousScores[2]}</p>
             <p>Image 4: {gameState.previousScores[3]}</p>
             <p>Image 5: {gameState.previousScores[4]}</p>
-            <button onClick=''>Start Again!</button>
+            <button onClick={handleStartAgain}>Start Again!</button>
         </div>
 
   )
