@@ -36,9 +36,16 @@ h1 {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media screen and (min-width: 600px) {
-  
-} */
+@media screen and (min-width: 600px) {
+  .app {
+    align-items: center;
+    color: white;
+    display: flex;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    flex-direction: column;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {
