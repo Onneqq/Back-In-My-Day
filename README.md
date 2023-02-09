@@ -16,18 +16,18 @@ Displaying the final score at the end - with the ability to share to friends.
 2. Click Play
 3. Guess using the year ruler/submit
 4. Play through 5 images.
-5. Play again or share!
-(No link available at this point in time)
+5. Play again!
+
 
 ## :rocket: Cool tech
 
 We used the following tech'n'tools:
 
+- React
 - HTML
 - JavaScript
 - CSS / SASS
 - FireBase 
-- Node js
 - Trello
 - Miro
 - Canva
@@ -40,22 +40,23 @@ We used the following tech'n'tools:
 
 
 
-## :cry: Challenges faced :trollface:
-
+## :cry: Challenges faced :cry:
+- Changing my mind set around updating the DOM in React.
+- Learning how to useState/passing props down to child components
+- A few teething issues getting firebase auto deploy through gitHub working. 
 
 
 ## :scream: Bugs to fix :poop:
-
+- Slight delay in photo updating while the state updates.
 
 
 ## :sunglasses: Most Enjoyable Features or Tasks:  :two_hearts:
-
-
-##  :file_folder: Database Tables:
+- Having that 'Aha' moment with passing information down to components has made me excited to continue learning/using React. 
 
 
 ## :sob: Lessons learnt
-
+- States should be created in the highest relevant component and passed down. I initially thought I could pass information up from states created within the child easily.
 
 ## :white_check_mark: Future Features
-
+- Planning to add a log in/users backend through firebase
+- Highscores table
