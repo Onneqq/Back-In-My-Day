@@ -23,6 +23,7 @@ function Game () {
   const [gameState, setGameState] = useState({
     turn: 1,
     images: newRandImages(),
+    imGoingToFixThis: 'YES IM AWARE YOU CAN CHEAT, THIS WILL BE FIXED',
     currentScore: 0,
     totalScore: 0,
     previousScores: [],
