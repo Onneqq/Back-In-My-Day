@@ -4,8 +4,8 @@ import React, { useState } from 'react'
 import { Slider } from '@mui/material'
 import './CSS/GameControls.scss'
 
-function GameControlsPlaying ({ gameState, setGameState }) {
-  const [value, setValue] = useState(1900)
+function GameControlsPlaying ({ gameState, setGameState, value, setValue }) {
+  // const [value, setValue] = useState(1962)
 
   const handleSubmit = () => {
     let score = (50 - Math.abs((gameState.images[gameState.turn - 1][2] - value))) * 50

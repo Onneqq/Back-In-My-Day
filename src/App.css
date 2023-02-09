@@ -1,18 +1,56 @@
-* {
+/* * {
   outline: 1px solid red;
-}
+} */
 
-.App {
+.app {
   align-items: center;
   color: white;
   display: flex;
   flex-direction: column;
+  margin-top: 14%;
+  margin-bottom: 14%;
+  font-family: 'Arvo', serif;;
 }
 
 body {
   background-image: url('./assets/images/historyphoto.avif');
+  overflow: auto;
 }
 
 h1 {
   text-align: center;
 }
+
+/* // Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  .app {
+    align-items: center;
+    color: white;
+    display: flex;
+    margin-top: 6%;
+    margin-bottom: 10%;
+    flex-direction: column;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media screen and (min-width: 600px) {
+  
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  
+} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+
+} */

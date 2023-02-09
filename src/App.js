@@ -3,7 +3,6 @@ import React from 'react'
 // Import the functions you need from the SDKs you need
 // import { initializeApp } from "firebase/app";
 // import { getAnalytics } from "firebase/analytics";
-import NavBar from './components/NavBar'
 import Main from './components/Main'
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -26,8 +25,7 @@ import Main from './components/Main'
 
 function App () {
   return (
-    <div className="App">
-      <NavBar />
+    <div className="app">
       <Main />
     </div>
   )

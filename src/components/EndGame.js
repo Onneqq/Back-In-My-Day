@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './CSS/EndGame.scss'
 function EndGame ({ gameState, setGameState, newRandImages }) {
   const handleStartAgain = () => {
     setGameState({
@@ -21,7 +21,7 @@ function EndGame ({ gameState, setGameState, newRandImages }) {
             <p>Image 3: {gameState.previousScores[2]}</p>
             <p>Image 4: {gameState.previousScores[3]}</p>
             <p>Image 5: {gameState.previousScores[4]}</p>
-            <button onClick={handleStartAgain}>Start Again!</button>
+            <button className='button-80' onClick={handleStartAgain}>Start Again!</button>
         </div>
 
   )

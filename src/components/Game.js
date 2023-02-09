@@ -19,6 +19,7 @@ function newRandImages () {
 }
 
 function Game () {
+  const [value, setValue] = useState(1962)
   const [gameState, setGameState] = useState({
     turn: 1,
     images: newRandImages(),
@@ -40,10 +41,10 @@ function Game () {
                 <GamePhoto image={gameState.images[gameState.turn - 1]} />
                 {gameState.turnResults
                   ? (
-                    <GameControlsResults gameState={gameState} setGameState={setGameState} />
+                    <GameControlsResults gameState={gameState} setGameState={setGameState} value={value} setValue={setValue} />
                     )
                   : (
-                    <GameControlsPlaying gameState={gameState} setGameState={setGameState} />
+                    <GameControlsPlaying gameState={gameState} setGameState={setGameState} value={value} setValue={setValue}/>
                     )}
                 <GameScore gameState={gameState} setGameState={setGameState} />
             </>
