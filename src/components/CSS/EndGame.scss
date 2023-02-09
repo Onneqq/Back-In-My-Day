@@ -1,32 +1,9 @@
-@media screen and (max-width: 600px) {
-    .end-game {
-        margin: 5px;
-        padding: 40px;
-    }
-    .main {
-        margin-top: 30%;
-    }
+
+.end-game {
+    margin: 1rem;
+    padding: 40px;
+    text-align: center;
 }
-
-@media screen and (min-width: 600px) {
-    .end-game {
-        margin: 5px;
-        padding: 0px 50px 0px 50px;
-    }
-
-    .main {
-        margin-top: 10%;
-    }
-}
-
-
-@media only screen and (min-width: 768px) {
-    .end-game {
-        margin: 5px;
-        padding: 100px;
-    }
-
-    .main {
-        margin: auto auto
-    }
+.main {
+    margin-top: 3%;
 }
