@@ -10,7 +10,7 @@ function GameControlsResults ({ gameState, setGameState, value, setValue }) {
         <>
         <button className='button-80' onClick={handleChange}>Next Image!</button>
         <h3>Your guess: {value}</h3>
-        <h3>Corrent Answer: {gameState.images[gameState.turn - 1][2]}</h3>
+        <h3>Correct Answer: {gameState.images[gameState.turn - 1][2]}</h3>
         </>
   )
 }
