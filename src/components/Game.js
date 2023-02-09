@@ -39,7 +39,7 @@ function Game () {
           : (
             <>
                 <GamePhoto image={gameState.images[gameState.turn - 1]} />
-                {gameState.turnResults
+                <div className='below-photo'> {gameState.turnResults
                   ? (
                     <GameControlsResults gameState={gameState} setGameState={setGameState} value={value} setValue={setValue} />
                     )
@@ -47,6 +47,7 @@ function Game () {
                     <GameControlsPlaying gameState={gameState} setGameState={setGameState} value={value} setValue={setValue}/>
                     )}
                 <GameScore gameState={gameState} setGameState={setGameState} />
+                </div>
             </>
             )}
     </div>
