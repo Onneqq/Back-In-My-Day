@@ -18,6 +18,7 @@ Displaying the final score at the end - with the ability to share to friends.
 4. Play through 5 images.
 5. Play again!
 
+![BIMD Homepage](https://i.imgur.com/3uu8Oxb.png) ![Game Example](https://i.imgur.com/isRKA2C.png) ![Final Score Screen](https://i.imgur.com/eNX4axD.png)
 
 ## :rocket: Cool tech
 
